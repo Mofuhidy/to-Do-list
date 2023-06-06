@@ -7,8 +7,8 @@ submit.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     e.preventDefault();
     tasks.addTask();
-    tasks.displayTasks();
     submit.value = '';
     listContainer.innerHTML = '';
+    tasks.displayTasks();
   }
 });

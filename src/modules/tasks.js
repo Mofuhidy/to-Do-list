@@ -27,9 +27,25 @@ export default class Tasks {
                   </li>`;
       listContainer.innerHTML = singleTask;
     });
+    const delButton = document.querySelectorAll('.delete');
+    delButton.forEach((delBtn, i) => {
+      delBtn.addEventListener('click', () => {
+        Tasks.removeTask(i);
+      });
+    });
   };
 
-  
+  static removeTask = (index) => {
+    tasksList.splice(index, 1);
+
+    tasksList.forEach((val, i) => {
+      val.index = i + 1;
+    });
+
+    listContainer.innerHTML = '';
+    localStorage.setItem('todo', JSON.stringify(tasksList));
+    Tasks.displayTasks();
+  }
 }
 
 export { submit, listContainer };
