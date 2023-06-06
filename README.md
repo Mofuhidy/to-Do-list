@@ -58,7 +58,7 @@ A simple HTML/CSS/JS to-do list app allows users to create and manage their task
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A
+- you can visit this link [Live Demo Link](https://mofuhidy.github.io/to-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
