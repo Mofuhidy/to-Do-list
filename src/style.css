@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap");
 
 :root {
-  --main: #fff;
-  --sec: #eaeaea;
-  --third: #b9b9b9;
-  --fourth: #807f7f;
+  --sec: #bbd6b8;
+  --main: #dbe4c6;
+  --third: #989898;
+  --fourth: #94af9f;
+  --text: #3e4b43;
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: var(--fourth);
   font-family: "Karla", sans-serif;
   margin: 0;
   padding: 0;
@@ -36,6 +37,8 @@ main {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--sec);
+  color: var(--text);
+  font-weight: 600;
 }
 
 i {
@@ -47,7 +50,7 @@ i:not(.enter) {
 }
 
 i:not(.enter):hover {
-  color: var(--fourth);
+  color: var(--text);
 }
 
 ul {
@@ -81,6 +84,7 @@ input {
 
 .checkList input {
   margin-right: 10px;
+  font-style: normal;
 }
 
 #add {
@@ -100,15 +104,17 @@ input {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color: var(--sec);
+  background-color: var(--fourth);
 }
 
 .clearCont .clrBtn {
   outline: none;
+  color: var(--main);
   border: none;
   background: inherit;
   line-height: 1.5rem;
   font-size: inherit;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

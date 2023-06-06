@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Awesome Books\] ](#-awesome-books-)
+- [📖 \[To Do list\] ](#-to-do-list-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -28,7 +28,7 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [Awesome Books] <a name="about-project"></a>
+# 📖 [To Do list] <a name="about-project"></a>
 
 **To Do list**
 A simple HTML/CSS/JS to-do list app allows users to create and manage their tasks in a digital format.
@@ -50,7 +50,9 @@ A simple HTML/CSS/JS to-do list app allows users to create and manage their task
 
 ### Key Features <a name="key-features"></a>
 
-- **entry point for projects**
+- **Add new task**
+- **Remove the task**
+- **Edit the task**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,7 +60,7 @@ A simple HTML/CSS/JS to-do list app allows users to create and manage their task
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- you can visit this link [Live Demo Link](https://mofuhidy.github.io/to-Do-list/)
+- [Live Demo Link](https://mofuhidy.github.io/to-Do-list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +127,9 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- N/A
+- **Add drag and drop**
+- **Add modals and messages for the users**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
