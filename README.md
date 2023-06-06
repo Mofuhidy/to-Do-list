@@ -13,6 +13,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -57,7 +58,9 @@ A simple HTML/CSS/JS to-do list app allows users to create and manage their task
 
 <!-- LIVE DEMO -->
 
-- not yet -->
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://mofuhidy.github.io/to-Do-list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
