@@ -24,7 +24,8 @@ main {
 .listCont {
   background-color: var(--main);
   min-width: 90%;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 5rem;
@@ -83,6 +84,7 @@ input {
 
 .checkList input {
   margin-right: 10px;
+  font-style: normal;
 }
 
 #add {
@@ -104,9 +106,7 @@ input {
   padding: 15px;
   background-color: var(--fourth);
 }
-.chcek {
-  accent-color: var(--main);
-}
+
 .clearCont .clrBtn {
   outline: none;
   color: var(--main);
@@ -121,7 +121,8 @@ input {
   .listCont {
     background-color: var(--main);
     min-width: 50%;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 10px 15px -3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 5rem;
