@@ -5,6 +5,12 @@ import TaskStatus from './modules/updateStatus.js';
 window.onload = tasks.displayTasks();
 TaskStatus.updateStatus();
 TaskStatus.clearCompleted();
+
+const refersh = document.querySelector('.refresh');
+refersh.addEventListener('click', () => {
+  window.location.reload();
+});
+
 submit.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     e.preventDefault();
