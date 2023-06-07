@@ -27,7 +27,7 @@ export default class Tasks {
                       <div class="checkList">
                        <input type="checkbox" name="check" class="chcek" ${task.completed === true ? 'checked' : ''}>
                        <!-- put the description inside input so the user can edit it -->
-                       <input class='inputDesc ${!task.completed ? '' : 'completed'}' value="${task.description}">
+                       <input tabindex="-1" class='inputDesc ${!task.completed ? '' : 'completed'}' value="${task.description}">
                         </div>
                       <i class="fa-solid fa-trash delete"></i>
                   </li>`;

@@ -4,7 +4,7 @@
   "description": "Simple webpack which can be used as a starting point in projects",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Mofuhidy/webpack-boilerplate/issues"
   },
-  "homepage": "https://github.com/Mofuhidy/webpack-boilerplate#readme",
+  "homepage": "https://github.com/Mofuhidy/to-Do-list",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
@@ -37,6 +37,7 @@
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "lodash": "^4.17.21"
   },
   "main": "webpack.config.js"
