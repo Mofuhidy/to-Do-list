@@ -18,4 +18,16 @@ export default class TaskStatus {
         });
       });
     };
+
+    static clearCompleted = () => {
+      const clrCompleted = document.querySelector('.clrBtn');
+      clrCompleted.addEventListener('click', () => {
+        const filterd = tasksList.filter((task) => task.completed !== true);
+        const notCompleted = filterd.forEach((e, i) => {
+          e.index = i + 1;
+        });
+        localStorage.setItem('todo', JSON.stringify(notCompleted));
+        window.location.reload();
+      });
+    }
 }

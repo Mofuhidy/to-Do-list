@@ -4,7 +4,7 @@ import TaskStatus from './modules/updateStatus.js';
 
 window.onload = tasks.displayTasks();
 TaskStatus.updateStatus();
-
+TaskStatus.clearCompleted();
 submit.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     e.preventDefault();
