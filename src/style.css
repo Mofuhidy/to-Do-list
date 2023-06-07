@@ -119,10 +119,15 @@ input {
 
 .completed {
   text-decoration: line-through var(--text);
+  color: gray;
 }
 
 .refresh:hover {
   transform: rotateZ(90deg);
+}
+
+.task-item:hover {
+  background-color: var(--sec);
 }
 
 @media screen and (min-width: 768px) {
