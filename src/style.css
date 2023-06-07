@@ -24,8 +24,7 @@ main {
 .listCont {
   background-color: var(--main);
   min-width: 90%;
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 5rem;
@@ -116,13 +115,15 @@ input {
   font-size: inherit;
   cursor: pointer;
 }
+.completed {
+  text-decoration: line-through var(--text);
+}
 
 @media screen and (min-width: 768px) {
   .listCont {
     background-color: var(--main);
     min-width: 50%;
-    box-shadow:
-      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 10px 15px -3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 5rem;

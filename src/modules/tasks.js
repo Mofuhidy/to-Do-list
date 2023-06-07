@@ -23,9 +23,9 @@ export default class Tasks {
     tasksList.forEach((task) => {
       singleTask += `<li class="task-item" id='${task.index}'>
                       <div class="checkList">
-                       <input type="checkbox" name="check" class="chcek">
+                       <input type="checkbox" name="check" class="chcek" ${task.completed === true ? 'checked' : ''}>
                        <!-- put the description inside input so the user can edit it -->
-                       <input class='inputDesc' value="${task.description}">
+                       <input class='inputDesc ${!task.completed ? '' : 'completed'}' value="${task.description}">
                         </div>
                       <i class="fa-solid fa-trash delete"></i>
                   </li>`;
@@ -65,4 +65,4 @@ export default class Tasks {
   }
 }
 
-export { submit, listContainer };
+export { submit, listContainer, tasksList };
