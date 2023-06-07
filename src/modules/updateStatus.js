@@ -1,3 +1,4 @@
+import saveData from './saveData.js';
 import { tasksList } from './tasks.js';
 
 export default class TaskStatus {
@@ -8,11 +9,11 @@ export default class TaskStatus {
         ch.addEventListener('change', () => {
           if (!tasksList[i].completed) {
             tasksList[i].completed = true;
-            localStorage.setItem('todo', JSON.stringify(tasksList));
+            saveData(tasksList);
             ch.nextElementSibling.classList.add('completed');
           } else {
             tasksList[i].completed = false;
-            localStorage.setItem('todo', JSON.stringify(tasksList));
+            saveData(tasksList);
             ch.nextElementSibling.classList.remove('completed');
           }
         });
@@ -22,11 +23,11 @@ export default class TaskStatus {
     static clearCompleted = () => {
       const clrCompleted = document.querySelector('.clrBtn');
       clrCompleted.addEventListener('click', () => {
-        const filterd = tasksList.filter((task) => task.completed !== true);
-        const notCompleted = filterd.forEach((e, i) => {
+        const notCompleted = tasksList.filter((task) => task.completed !== true);
+        notCompleted.forEach((e, i) => {
           e.index = i + 1;
         });
-        localStorage.setItem('todo', JSON.stringify(notCompleted));
+        saveData(notCompleted);
         window.location.reload();
       });
     }

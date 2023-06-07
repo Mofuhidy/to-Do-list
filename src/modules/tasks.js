@@ -1,3 +1,5 @@
+import saveData from './saveData.js';
+
 const tasksList = JSON.parse(localStorage.getItem('todo')) || [];
 
 const listContainer = document.querySelector('.tasks-container');
@@ -14,7 +16,7 @@ export default class Tasks {
     const task = new Tasks(submit.value, false, tasksList.length + 1);
     if (submit.value !== '') {
       tasksList.push(task);
-      localStorage.setItem('todo', JSON.stringify(tasksList));
+      saveData(tasksList);
     }
   }
 
@@ -46,7 +48,7 @@ export default class Tasks {
       editTask.addEventListener('change', () => {
         if (editTask.value) {
           tasksList[i].description = editTask.value;
-          localStorage.setItem('todo', JSON.stringify(tasksList));
+          saveData(tasksList);
         }
       });
     });
@@ -60,7 +62,7 @@ export default class Tasks {
     });
 
     listContainer.innerHTML = '';
-    localStorage.setItem('todo', JSON.stringify(tasksList));
+    saveData(tasksList);
     Tasks.displayTasks();
   }
 }
