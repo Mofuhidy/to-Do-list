@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1686733910070" clover="3.2.0">
-  <project timestamp="1686733910071" name="All files">
+<coverage generated="1686734039741" clover="3.2.0">
+  <project timestamp="1686734039741" name="All files">
     <metrics statements="84" coveredstatements="11" conditionals="14" coveredconditionals="2" methods="23" coveredmethods="2" elements="121" coveredelements="15" complexity="0" loc="84" ncloc="84" packages="1" files="2" classes="2"/>
-    <file name="saveData.js" path="C:\Users\otien\OneDrive\Desktop\Microverse Projects\Module 2\Test To Do List\to-Do-list\src\modules\saveData.js">
+    <file name="saveData.js" path="/Users/mofuhidy/Sites/Microverse/to-Do-list/src/modules/saveData.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="2" type="stmt"/>
     </file>
-    <file name="tasks.js" path="C:\Users\otien\OneDrive\Desktop\Microverse Projects\Module 2\Test To Do List\to-Do-list\src\modules\tasks.js">
+    <file name="tasks.js" path="/Users/mofuhidy/Sites/Microverse/to-Do-list/src/modules/tasks.js">
       <metrics statements="82" coveredstatements="9" conditionals="14" coveredconditionals="2" methods="22" coveredmethods="1"/>
       <line num="3" count="1" type="cond" truecount="2" falsecount="0"/>
       <line num="5" count="1" type="stmt"/>

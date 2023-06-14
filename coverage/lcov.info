@@ -1,5 +1,5 @@
 TN:
-SF:src\modules\saveData.js
+SF:src/modules/saveData.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:1
@@ -12,7 +12,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\modules\tasks.js
+SF:src/modules/tasks.js
 FN:9,(anonymous_0)
 FN:15,(anonymous_1)
 FN:23,(anonymous_2)
