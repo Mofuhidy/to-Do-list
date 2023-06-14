@@ -1,5 +1,6 @@
 import editTask from '../__mocks__/editTask.js';
 import updateStatus from '../__mocks__/updateStatus.js';
+import clearCompleted from '../__mocks__/clearCompleted.js';
 
 describe('Test edit and complete status ', () => {
   // Arrange
@@ -30,5 +31,12 @@ describe('Test edit and complete status ', () => {
     const update = updateStatus();
     // Assert
     expect(update).toBeTruthy();
+  });
+
+  test('clear completed testing ..', () => {
+    // Act - Call the edit function
+    const clear = clearCompleted();
+    // Assert - that 2 elements with complete:true are deleted
+    expect(clear).toHaveLength(1);
   });
 });
